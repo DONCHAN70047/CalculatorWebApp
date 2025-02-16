@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleCalculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    
+    <form action="/calculate" method = "POST">
+        <div>
+            <label>Value 1:</label>
+            <input type="number" name = 'num1' id="value1">
+        </div>
+        
+        <div>
+            <label>Value 2:</label>
+            <input type="num2" name = 'num2' id="value2">
+        </div>
+        
+        <div>
+            <label for="operation" >Operation:</label>
+            <select id="operationData" name = 'operation'>
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (*)</option>
+                <option value="/">Division (/)</option>
+            </select>
+        </div>
+        
+        <div>
+            <button onclick="calculate()">Calculate</button>
+        </div>
+    </form>
+
+</body>
+
+
+
+
+<style>
+    body {
+        color: white;
+        background-color: black;
+    }
+    input, select {
+        padding: 8px;
+        margin: 10px;
+        font-size: 16px;
+        width: 200px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .result-box {
+        padding: 8px;
+        margin: 10px;
+        font-size: 16px;
+        width: 200px;
+        text-align: center;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+</style>
+</html>
